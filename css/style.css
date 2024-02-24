@@ -1,0 +1,36 @@
+/* general */
+
+body{
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+/* nav start */
+ul {
+    width: 98%;
+    position: fixed;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li{
+    float: left;
+    border-right: 1px solid #ffffff;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+li a:hover {
+    background-color: #111;
+}
+  
+/* nav ends */
