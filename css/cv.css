@@ -48,6 +48,12 @@ li a:hover {
         text-decoration: none;
     }
 }
+
+.separator{
+    border-bottom: 3px solid #111 ;
+    width: 80%;
+    margin-left: 10%;
+}
   
 /* HEADER */
 /* 2 comuns for the header */
@@ -88,27 +94,40 @@ li a:hover {
 /* CONTENT */
 /* 3 comuns for the content */
 /* Create three equal columns that float next to each other */
-.column {
-    width: 80%;
+.row {
+    text-align: center;
     margin-left: 10%;
     margin-right: 10%;
-    font-size: large;
 }
-
-
+.column-1 {
+    width: 45%;
+    float: left;
+    
+}
+.column-2 {
+    width: 45%;
+    float: right;
+    
+}
+  
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
   
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
 @media screen and (max-width: 600px) {
-    .column {
+    .column-1 {
+        width: 100%;
+    }
+    .column-2 {
         width: 100%;
     }
 }
 
-.separator{
-    border-bottom: 3px solid #111 ;
-    width: 80%;
-    margin-left: 10%;
-}
+
 /* footer */
 footer {
     text-align: center;
