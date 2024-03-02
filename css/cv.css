@@ -65,10 +65,12 @@ li a:hover {
     width: 35%;
 }
 .row-header .column-2 {
+    text-align: center;
     margin-top: 50px;
     float: left;
     width: 65%;
     font-size: 500%;
+    text-align: center;
 }
 /* Clear floats after the columns */
 .row-header:after {

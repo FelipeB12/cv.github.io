@@ -49,6 +49,12 @@ li a:hover {
     }
 }
   
+.separator{
+    border-bottom: 3px solid #111 ;
+    width: 80%;
+    margin-left: 10%;
+}
+
 /* HEADER */
 /* 2 comuns for the header */
 /* Create two equal columns that float next to each other */
@@ -56,13 +62,16 @@ li a:hover {
     margin-top: 50px;
     text-align: center;
     float: left;
-    width: 35%;
+    width: 22%;
+    margin-left: 13%;
 }
 .row-header .column-2 {
     margin-top: 50px;
     float: left;
-    width: 65%;
+    width: 58%;
     font-size: 500%;
+    text-align: center;
+    margin-right: 7%;
 }
 /* Clear floats after the columns */
 .row-header:after {
@@ -85,9 +94,12 @@ li a:hover {
 }
 
 
+
+
 /* CONTENT */
-/* 3 comuns for the content */
+/* 1 comuns for the content */
 /* Create three equal columns that float next to each other */
+
 .column {
     width: 80%;
     margin-left: 10%;
