@@ -94,17 +94,15 @@ li a:hover {
 /* CONTENT */
 /* 3 comuns for the content */
 /* Create three equal columns that float next to each other */
-.column-1 {
+.column-c-1 {
+    margin-left: 10%;
     float: left;
-    width: 33%;
+    width: 40%;
 }
-.column-2 {
+.column-c-2 {
+    margin-right: 10%;
     float: left;
-    width: 33%;
-}
-.column-3 {
-    float: left;
-    width: 33%;
+    width: 40%;
 }
   
 /* Clear floats after the columns */
@@ -116,20 +114,56 @@ li a:hover {
   
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
 @media screen and (max-width: 600px) {
-    .column-1 {
+    .column-c-1 {
         width: 100%;
     }
-    .column-2 {
-        width: 100%;
-    }
-    .column-3 {
+    .column-c-2 {
         width: 100%;
     }
 }
 
+.extra {
+    display: none;
+}
+.extra-2 {
+    display: none;
+}
+input[type="checkbox"]{
+    height: 2em;
+    display: block;
+    appearance: none;
+}
+label{
+    position: relative;
+    padding: 0.5em;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+label::before{
+    content: 'Read More';
+}
+input[type="checkbox"]:checked ~ label::before{
+    content: 'Read less ';
+}
+/*funtion btn 1*/
+.dots:has(~ input[type="checkbox"]:checked){
+    display: none;
+}
+.extra:has(~ input[type="checkbox"]:checked){
+    display: inline;
+}
+/*funtion btn 1*/
+.dots-2:has(~ input[type="checkbox"]:checked){
+    display: none;
+}
+.extra-2:has(~ input[type="checkbox"]:checked){
+    display: inline;
+}
 
 /* footer */
 footer {
+    margin-top: 10px;
     text-align: center;
     padding: 1px;
     background-color: #333;
